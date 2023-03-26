@@ -1,4 +1,4 @@
-def coverging_pointers(garbage_value, list_to_clean):
+def converging_pointers(garbage_value, list_to_clean):
     legit = len(list_to_clean) - 1
     left = 0
     right = len(list_to_clean) - 1
@@ -12,6 +12,7 @@ def coverging_pointers(garbage_value, list_to_clean):
     if list_to_clean[left] == garbage_value:
         legit -= 1
     return list_to_clean[:legit + 1]
+
 
 def copy_over(garbage_value, list_to_clean):
     left = 0
